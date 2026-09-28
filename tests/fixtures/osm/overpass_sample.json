@@ -1,0 +1,72 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API test fixture",
+  "osm3s": {
+    "timestamp_osm_base": "2024-06-01T12:00:00Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "way",
+      "id": 101,
+      "tags": {"power": "line", "voltage": "110000"},
+      "geometry": [
+        {"lat": 52.519, "lon": 13.401},
+        {"lat": 52.521, "lon": 13.401}
+      ]
+    },
+    {
+      "type": "node",
+      "id": 201,
+      "lat": 52.521,
+      "lon": 13.400,
+      "tags": {"power": "substation", "name": "Test substation"}
+    },
+    {
+      "type": "way",
+      "id": 301,
+      "tags": {"highway": "residential"},
+      "geometry": [
+        {"lat": 52.520, "lon": 13.399},
+        {"lat": 52.520, "lon": 13.401}
+      ]
+    },
+    {
+      "type": "node",
+      "id": 401,
+      "lat": 52.524,
+      "lon": 13.400,
+      "tags": {"place": "village", "name": "Test village"}
+    },
+    {
+      "type": "way",
+      "id": 501,
+      "tags": {"landuse": "industrial"},
+      "geometry": [
+        {"lat": 52.518, "lon": 13.398},
+        {"lat": 52.518, "lon": 13.399},
+        {"lat": 52.519, "lon": 13.399},
+        {"lat": 52.519, "lon": 13.398},
+        {"lat": 52.518, "lon": 13.398}
+      ]
+    },
+    {
+      "type": "way",
+      "id": 601,
+      "tags": {
+        "building": "yes",
+        "roof:shape": "gabled",
+        "roof:direction": "S",
+        "roof:angle": "30",
+        "building:levels": "2"
+      },
+      "geometry": [
+        {"lat": 52.51995, "lon": 13.39995},
+        {"lat": 52.51995, "lon": 13.40005},
+        {"lat": 52.52005, "lon": 13.40005},
+        {"lat": 52.52005, "lon": 13.39995},
+        {"lat": 52.51995, "lon": 13.39995}
+      ]
+    }
+  ]
+}

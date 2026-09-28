@@ -1,0 +1,3 @@
+module_id,manufacturer,model,technology,rated_power_w,efficiency,area_m2,length_m,width_m,temperature_coefficient_pmax,weight_kg,bifacial,provenance.source_name,provenance.source_kind,provenance.fixture,provenance.notes
+test.csv.mono.400,SolarDSS Test Fixture,TEST-CSV-MONO-400,mono-c-Si,400,0.20,2.0,1.72,1.13,-0.35,22,false,tests/fixtures/pv/modules.csv,test_fixture,true,TEST FIXTURE. Not a commercial product. Values are synthetic for unit tests only.
+test.csv.cdte.110,SolarDSS Test Fixture,TEST-CSV-CDTE-110,CdTe,110,0.18,0.72,1.20,0.60,-0.25,12,false,tests/fixtures/pv/modules.csv,test_fixture,true,TEST FIXTURE. Not a commercial product. Values are synthetic for unit tests only.

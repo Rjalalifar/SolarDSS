@@ -1,0 +1,4 @@
+{
+  "message": "lat: Incorrect value. Please, enter a float between -90 and 90.",
+  "status": 400
+}

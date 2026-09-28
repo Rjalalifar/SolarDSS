@@ -1,0 +1,12 @@
+{
+  "mapping_id": "fixture-flood-rp100-legend",
+  "dataset_id": "fixture-flood-rp100",
+  "notes": [
+    "Explicit fixture legend. These Low/Medium/High labels are not a SolarDSS default."
+  ],
+  "classes": [
+    {"raw": "1", "category": "Low", "score": 0.25},
+    {"raw": "2", "category": "Medium", "score": 0.5},
+    {"raw": "3", "category": "High", "score": 0.75}
+  ]
+}

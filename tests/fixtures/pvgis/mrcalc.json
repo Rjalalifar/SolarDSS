@@ -1,0 +1,211 @@
+{
+  "inputs": {
+    "location": {
+      "latitude": 45.0,
+      "longitude": 8.0,
+      "elevation": 250.0
+    },
+    "meteo_data": {
+      "radiation_db": "PVGIS-SARAH3",
+      "meteo_db": "ERA5",
+      "year_min": 2020,
+      "year_max": 2020,
+      "use_horizon": true,
+      "horizon_db": null,
+      "horizon_data": "DEM-calculated"
+    },
+    "plane": {
+      "fixed_horizontal": {
+        "slope": {
+          "value": 0,
+          "optimal": "-"
+        },
+        "azimuth": {
+          "value": "-",
+          "optimal": "-"
+        }
+      }
+    }
+  },
+  "outputs": {
+    "monthly": [
+      {
+        "year": 2020,
+        "month": 1,
+        "H(h)_m": 62.46,
+        "Hb(n)_m": 131.44,
+        "Kd": 0.32,
+        "T2m": 4.2
+      },
+      {
+        "year": 2020,
+        "month": 2,
+        "H(h)_m": 83.23,
+        "Hb(n)_m": 136.69,
+        "Kd": 0.33,
+        "T2m": 7.4
+      },
+      {
+        "year": 2020,
+        "month": 3,
+        "H(h)_m": 102.86,
+        "Hb(n)_m": 109.55,
+        "Kd": 0.47,
+        "T2m": 8.3
+      },
+      {
+        "year": 2020,
+        "month": 4,
+        "H(h)_m": 164.62,
+        "Hb(n)_m": 179.17,
+        "Kd": 0.35,
+        "T2m": 14.3
+      },
+      {
+        "year": 2020,
+        "month": 5,
+        "H(h)_m": 193.52,
+        "Hb(n)_m": 171.95,
+        "Kd": 0.4,
+        "T2m": 18.2
+      },
+      {
+        "year": 2020,
+        "month": 6,
+        "H(h)_m": 195.63,
+        "Hb(n)_m": 174.15,
+        "Kd": 0.38,
+        "T2m": 21.1
+      },
+      {
+        "year": 2020,
+        "month": 7,
+        "H(h)_m": 225.17,
+        "Hb(n)_m": 227.46,
+        "Kd": 0.31,
+        "T2m": 25.0
+      },
+      {
+        "year": 2020,
+        "month": 8,
+        "H(h)_m": 187.63,
+        "Hb(n)_m": 197.16,
+        "Kd": 0.32,
+        "T2m": 24.8
+      },
+      {
+        "year": 2020,
+        "month": 9,
+        "H(h)_m": 135.48,
+        "Hb(n)_m": 153.78,
+        "Kd": 0.37,
+        "T2m": 20.1
+      },
+      {
+        "year": 2020,
+        "month": 10,
+        "H(h)_m": 80.12,
+        "Hb(n)_m": 91.88,
+        "Kd": 0.48,
+        "T2m": 12.9
+      },
+      {
+        "year": 2020,
+        "month": 11,
+        "H(h)_m": 54.0,
+        "Hb(n)_m": 86.32,
+        "Kd": 0.46,
+        "T2m": 8.8
+      },
+      {
+        "year": 2020,
+        "month": 12,
+        "H(h)_m": 31.99,
+        "Hb(n)_m": 36.27,
+        "Kd": 0.67,
+        "T2m": 3.1
+      }
+    ]
+  },
+  "meta": {
+    "inputs": {
+      "location": {
+        "description": "Selected location",
+        "variables": {
+          "latitude": {
+            "description": "Latitude",
+            "units": "decimal degree"
+          },
+          "longitude": {
+            "description": "Longitude",
+            "units": "decimal degree"
+          },
+          "elevation": {
+            "description": "Elevation",
+            "units": "m"
+          }
+        }
+      },
+      "meteo_data": {
+        "description": "Sources of meteorological data",
+        "variables": {
+          "radiation_db": {
+            "description": "Solar radiation database"
+          },
+          "meteo_db": {
+            "description": "Database used for meteorological variables other than solar radiation"
+          },
+          "year_min": {
+            "description": "First year of the calculations"
+          },
+          "year_max": {
+            "description": "Last year of the calculations"
+          },
+          "use_horizon": {
+            "description": "Include horizon shadows"
+          },
+          "horizon_db": {
+            "description": "Source of horizon data"
+          }
+        }
+      },
+      "plane": {
+        "description": "plane",
+        "fields": {
+          "slope": {
+            "description": "Inclination angle from the horizontal plane",
+            "units": "degree"
+          },
+          "azimuth": {
+            "description": "Orientation (azimuth) angle of the (fixed) PV system (0 = S, 90 = W, -90 = E)",
+            "units": "degree"
+          }
+        }
+      }
+    },
+    "outputs": {
+      "monthly": {
+        "type": "time series",
+        "timestamp": "monthly averages",
+        "variables": {
+          "H(h)_m": {
+            "description": "Irradiation on horizontal plane",
+            "units": "kWh/m2/mo"
+          },
+          "Hb(n)_m": {
+            "description": "Monthly beam (direct) irradiation on a plane always normal to sun rays",
+            "units": "kWh/m2/mo"
+          },
+          "Kd": {
+            "description": "Ratio of diffuse to global irradiation",
+            "units": "-"
+          },
+          "T2m": {
+            "description": "24 hour average of temperature",
+            "units": "degree Celsius"
+          }
+        }
+      }
+    }
+  }
+}

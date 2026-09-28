@@ -1,0 +1,10 @@
+{
+  "mapping_id": "fixture-wildfire-legend",
+  "dataset_id": "fixture-wildfire",
+  "notes": [
+    "Explicit fixture legend for class 4. SolarDSS does not infer fire severity."
+  ],
+  "classes": [
+    {"raw": "4", "category": "Extreme", "score": 0.9}
+  ]
+}

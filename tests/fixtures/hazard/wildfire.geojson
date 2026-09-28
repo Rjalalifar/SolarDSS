@@ -1,0 +1,26 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "wf-east",
+        "value": 4,
+        "class": "extreme",
+        "return_period": "annual"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [13.0, 52.0],
+            [13.1, 52.0],
+            [13.1, 52.1],
+            [13.0, 52.1],
+            [13.0, 52.0]
+          ]
+        ]
+      }
+    }
+  ]
+}

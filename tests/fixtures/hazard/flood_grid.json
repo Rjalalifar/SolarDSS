@@ -1,0 +1,19 @@
+{
+  "source_name": "fixture flood RP100",
+  "source_dataset": "fixture-flood-rp100",
+  "source_version": "2020.1",
+  "source_year": 2020,
+  "resolution": "1deg",
+  "return_period": "100-year",
+  "crs": "EPSG:4326",
+  "origin_x": 0.0,
+  "origin_y": 3.0,
+  "cell_size_x": 1.0,
+  "cell_size_y": 1.0,
+  "nodata": -9999,
+  "uncertainty_notes": ["synthetic raster; not a published flood study"],
+  "values": [
+    [1, 2, 3],
+    [1, 2, -9999]
+  ]
+}

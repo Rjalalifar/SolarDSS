@@ -1,0 +1,103 @@
+{
+  "notes": [
+    "TEST FIXTURE CATALOG. Not commercial products. Synthetic values for unit tests only."
+  ],
+  "modules": [
+    {
+      "module_id": "test.file.mono.400",
+      "manufacturer": "SolarDSS Test Fixture",
+      "model": "TEST-FILE-MONO-400",
+      "technology": "mono-c-Si",
+      "rated_power_w": 400.0,
+      "efficiency": 0.2,
+      "area_m2": 2.0,
+      "length_m": 1.72,
+      "width_m": 1.13,
+      "thickness_m": 0.035,
+      "temperature_coefficient_pmax": -0.35,
+      "voc": 49.0,
+      "isc": 10.5,
+      "vmp": 41.0,
+      "imp": 9.76,
+      "bifacial": false,
+      "degradation_rate": 0.005,
+      "max_system_voltage": 1500.0,
+      "weight_kg": 22.0,
+      "provenance": {
+        "source_name": "tests/fixtures/pv/catalog.json",
+        "source_kind": "test_fixture",
+        "fixture": true,
+        "notes": [
+          "TEST FIXTURE. Not a commercial product. Values are synthetic for unit tests only."
+        ]
+      }
+    },
+    {
+      "module_id": "test.file.cdte.110",
+      "manufacturer": "SolarDSS Test Fixture",
+      "model": "TEST-FILE-CDTE-110",
+      "technology": "CdTe",
+      "rated_power_w": 110.0,
+      "efficiency": 0.18,
+      "area_m2": 0.72,
+      "length_m": 1.2,
+      "width_m": 0.6,
+      "thickness_m": 0.007,
+      "temperature_coefficient_pmax": -0.25,
+      "voc": 90.0,
+      "isc": 1.7,
+      "vmp": 73.0,
+      "imp": 1.51,
+      "bifacial": false,
+      "weight_kg": 12.0,
+      "provenance": {
+        "source_name": "tests/fixtures/pv/catalog.json",
+        "source_kind": "test_fixture",
+        "fixture": true,
+        "notes": [
+          "TEST FIXTURE. Not a commercial product. Values are synthetic for unit tests only."
+        ]
+      }
+    }
+  ],
+  "inverters": [
+    {
+      "inverter_id": "test.file.inv.10k",
+      "manufacturer": "SolarDSS Test Fixture",
+      "model": "TEST-FILE-INV-10K",
+      "rated_ac_power_w": 10000.0,
+      "max_dc_input_w": 15000.0,
+      "mppt_voltage_min": 200.0,
+      "mppt_voltage_max": 800.0,
+      "efficiency": 0.98,
+      "max_dc_voltage": 1000.0,
+      "max_dc_current": 20.0,
+      "provenance": {
+        "source_name": "tests/fixtures/pv/catalog.json",
+        "source_kind": "test_fixture",
+        "fixture": true,
+        "notes": [
+          "TEST FIXTURE. Not a commercial product. Values are synthetic for unit tests only."
+        ]
+      }
+    }
+  ],
+  "batteries": [
+    {
+      "battery_id": "test.file.bat.5",
+      "manufacturer": "SolarDSS Test Fixture",
+      "model": "TEST-FILE-BAT-5",
+      "chemistry": "TEST-LFP",
+      "usable_capacity_kwh": 5.0,
+      "roundtrip_efficiency": 0.9,
+      "provenance": {
+        "source_name": "tests/fixtures/pv/catalog.json",
+        "source_kind": "test_fixture",
+        "fixture": true,
+        "notes": [
+          "TEST FIXTURE. Not a commercial product. Values are synthetic for unit tests only."
+        ]
+      }
+    }
+  ]
+}
